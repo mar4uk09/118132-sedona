@@ -21,13 +21,53 @@
 						<a href="#">ГОСТИНИЦЫ</a>
 					</li>
 				</ul>
-				<img class="logo" src="img/logo.png" width="138" height="70" alt="Sedona">
+				<a href="index.html"><img class="logo" src="img/logo.png" width="138" height="70" alt="Sedona"></a>
 			</nav>
 		</header>
 
 			<main>
 				<section class="filters">
-					<!-- Form -->
+
+					<form action="https://echo.htmlacademy.ru" method="get">
+						<h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+						<fieldset>
+							<legend>ИНФРАСТРУКТУРА:</legend>
+							<label>
+								<input type="checkbox" name="infrastructure" value="БАССЕЙН" checked>
+								БАССЕЙН
+							</label>
+							<label>
+								<input type="checkbox" name="infrastructure" value="ПАРКОВКА">
+								ПАРКОВКА
+							</label>
+							<label>
+								<input type="checkbox" name="infrastructure" value="Wi-Fi">
+								Wi-Fi
+							</label>
+						</fieldset>
+						<fieldset>
+							<legend>Тип жилья:</legend>
+							<label>
+								<input type="checkbox" name="accommodation" value="ГостиницА" checked>
+								ГостиницА
+							</label>
+							<label>
+								<input type="checkbox" name="accommodation" value="МОТЕЛЬ" checked>
+								МОТЕЛЬ
+							</label>
+							<label>
+								<input type="checkbox" name="accommodation" value="АПАРТАМЕНТЫ" checked>
+								АПАРТАМЕНТЫ
+							</label>
+						</fieldset>
+						<fieldset>
+							<legend>Стоимость в сутки (Р):</legend>
+							<span>от 0</span>
+							<span>ДО 3000</span>
+							<input type="range" name="price">
+						</fieldset>
+						<button type="submit" class="filters-button">ПОКАЗАТЬ</button>
+					</form>
 				</section>
 				<div class="sorting-block">
 					<div class="finded">
@@ -46,7 +86,7 @@
 				</div>
 				<section class="hotels">
 					<img src="img/hotel1.jpg" width="135" height="90" alt="hotel foto"> 
-					<h3>Amara Resort & Spa</h3>
+					<h3>Amara Resort &amp; Spa</h3>
 					<table>
 						<tr>
 							<td>Гостиница</td>
@@ -105,7 +145,7 @@
 
    		<footer class="main-footer">
    			<div class="visit-sedona">
-   				<span>#visitSEDONA</span>
+   				<a class="visit-sedona-link" href="#">#visitSEDONA</a>
    			</div>
    			<div class="social">
    				<ul>
@@ -116,7 +156,7 @@
    			</div>
    			<div class="copyright">
    				<span>WEBSITE by</span>
-   				<a href="https://htmlacademy.ru/intensive/htmlcss">
+   				<a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
    					<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
    				</a> 			
    			</div>
