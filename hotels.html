@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="hotels-page">
 		<header class="main-header">
 			<nav class="main-nav">
-				<ul>
+				<ul class="main-navigation">
 					<li>
-						<a href="#">ИНФОРМАЦИЯ</a>
+						<a href="index.html">ИНФОРМАЦИЯ</a>
 					</li>
 					<li>
 						<a href="#">ФОТО И ВИДЕО</a>
@@ -18,7 +21,7 @@
 						<a href="#">КАРТА ШТАТА</a>
 					</li>
 					<li>
-						<a href="#">ГОСТИНИЦЫ</a>
+						<a href="hotels.html" class="current-page">ГОСТИНИЦЫ</a>
 					</li>
 				</ul>
 				<a href="index.html"><img class="logo" src="img/logo.png" width="138" height="70" alt="Sedona"></a>
@@ -27,7 +30,6 @@
 
 			<main>
 				<section class="filters">
-
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
 						<fieldset>
@@ -75,18 +77,18 @@
 					</div>
 					<div class="sorting-left-block">
 						<p>СОРТИРОВКА:</p>
-						<a href="#">ПО ЦЕНЕ</a>
+						<a href="#" class="current-page">ПО ЦЕНЕ</a>
 						<a href="#">ПО ТИПУ</a>
 						<a href="#">ПО РЕЙТИНГУ</a>
 					</div>
 					<div class="sorting-right-block">
 						<a href="#">up</a>
-						<a href="#">down</a>
+						<a href="#" class="current-page">down</a>
 					</div>
 				</div>
 				<section class="hotels">
 					<img src="img/hotel1.jpg" width="135" height="90" alt="hotel foto"> 
-					<h3>Amara Resort &amp; Spa</h3>
+					<h3><a href="#" class="hotel-name">Amara Resort &amp; Spa</a></h3>
 					<table>
 						<tr>
 							<td>Гостиница</td>
@@ -94,10 +96,10 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">ПОДРОБНЕЕ</a>
+								<a href="#" class="details">ПОДРОБНЕЕ</a>
 							</td>
 							<td>
-								<a href="#">ЗАБРОНИРОВАТЬ</a>
+								<a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
 							</td>
 						</tr>
 					</table>
@@ -105,7 +107,7 @@
 				</section>
 				<section class="hotels">
 					<img src="img/hotel2.jpg" width="135" height="90" alt="hotel foto"> 
-					<h3>Desert Quail Inn</h3>
+					<h3><a href="#" class="hotel-name">Desert Quail Inn</a></h3>
 					<table>
 						<tr>
 							<td>Мотель</td>
@@ -113,10 +115,10 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">ПОДРОБНЕЕ</a>
+								<a href="#" class="details">ПОДРОБНЕЕ</a>
 							</td>
 							<td>
-								<a href="#">ЗАБРОНИРОВАТЬ</a>
+								<a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
 							</td>
 						</tr>
 					</table>
@@ -124,7 +126,7 @@
 				</section>
 				<section class="hotels">
 					<img src="img/hotel3.jpg" width="135" height="90" alt="hotel foto"> 
-					<h3>Villas at Poco Diablo</h3>
+					<h3><a href="#" class="hotel-name">Villas at Poco Diablo</a></h3>
 					<table>
 						<tr>
 							<td>Апартаменты</td>
@@ -132,10 +134,10 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">ПОДРОБНЕЕ</a>
+								<a href="#" class="details">ПОДРОБНЕЕ</a>
 							</td>
 							<td>
-								<a href="#">ЗАБРОНИРОВАТЬ</a>
+								<a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
 							</td>
 						</tr>
 					</table>
@@ -148,7 +150,7 @@
    				<a class="visit-sedona-link" href="#">#visitSEDONA</a>
    			</div>
    			<div class="social">
-   				<ul>
+   				<ul class="social-navigation">
           			<li><a class="social-button" href="#">Twitter</a></li>
           			<li><a class="social-button" href="#">Facebook</a></li>
           			<li><a class="social-button" href="#">Youtube</a></li>

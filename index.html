@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-nav">
-				<ul>
+				<ul class="main-navigation">
 					<li>
-						<a href="info.html">ИНФОРМАЦИЯ</a>
+						<a href="index.html">ИНФОРМАЦИЯ</a>
 					</li>
 					<li>
 						<a href="foto.html">ФОТО И ВИДЕО</a>
@@ -28,15 +31,17 @@
 		<main>
 			<section class="welcome-sedona">
 				<h1 class="visually-hidden">СЕДОНА</h1>
-				<img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
-				<p><b>СЕДОНА — небольшой городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!</b></p>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>				
+				<img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">				
 			</section>
+			<div class="about-sedona">
+				<p><b>СЕДОНА — небольшой городок в АРИЗОНЕ,<br>  зАСЛУЖИвающий большего!</b></p>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
 			<div class="content-block">
 				<section class="advantages">
 					<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
 					<span>— №1 —</span>
-					<p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+					<p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</section>
 				<div class="image">
 					<img src="img/photo1.jpg" width="800" height="256" alt="Sedona Foto">					
@@ -45,15 +50,15 @@
 			<div class="content-block">
 				<article class="suggestions">
 					<h2>Жилье</h2>
-					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					<p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
 				</article>
 				<article class="suggestions">
 					<h2>ЕДА</h2>
-					<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+					<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br> Вы НЕ разочаруетесь!</p>
 				</article >
 				<article class="suggestions">
 					<h2>СУВЕНИРЫ</h2>
-					<p>Не только китайского, но и местного производства!</p>
+					<p>Не только китайского, но и местного<br> производства!</p>
 				</article>
 			</div>
 			<div class="content-block">
@@ -63,42 +68,46 @@
 				<section class="advantages">
 					<h2>ТАМ ЕСТЬ Мост дьявола</h2>
 					<span>— №2 —</span>
-					<p>а, по нему можно пройти! Если конечно вы осмелитесь</p>
+					<p>да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
 				</section>
 			</div>
 			<div class="content-block">
 				<section class="advantages">
 					<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
 					<span>— №3 —</span>
-					<p>ВСЕ достопримечательности находятся очень близко</p>
+					<p>ВСЕ достопримечательности<br> находятся очень близко</p>
 				</section>
 				<section class="advantages">
 					<h2>КРАСИВАЯ ДОРОГА</h2>
 					<span>— №4 —</span>
-					<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+					<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
 				</section>
 				<section class="advantages">
 					<h2>МАЛО ТУРИСТОВ</h2>
 					<span>— №5 —</span>
-					<p>Большинство едет в гранд каньон и толпится там</p>
+					<p>Большинство едет в гранд каньон и<br> толпится там</p>
 				</section>
 			</div>
 			<div class="hotel-search">
 				<p><b>ЗАИНТЕРЕСОВАЛИСЬ?</b></p>
 				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<img src="map.jpg" width="1200" height="593" alt="Map">
 				<button type="button" class="search-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+				<img src="img/map.jpg" width="1200" height="593" alt="Map">
 				<div class="search-form">
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<div class="visiting-dates">
 							<label for="arrival">Дата заезда:</label>
 							<input type="text" name="arrival-date" id="arrival" value="24 Апреля 2017">
-							<span class="calendar">Иконка календаря</span>
+							<button type="button" class="calendar">
+								<p class="visually-hidden">Выбрать дату</p>
+							</button>
 						</div>
 						<div class="visiting-dates">
 							<label for="departure">Дата Выезда:</label>
 							<input type="text" name="departure-date" id="departure" value="4 июля 2017">
-							<span class="calendar">Иконка календаря</span>
+							<button type="button" class="calendar">
+								<p class="visually-hidden">Выбрать дату</p>
+							</button>
 						</div>
 						<div class="visitors">
 							<label for="adult">ВзрослыЕ:</label>
@@ -120,10 +129,10 @@
 
    		<footer class="main-footer">
    			<div class="visit-sedona">
-   				<a class="visit-sedona-link" href="#">#visitSEDONA</a>
+   				<a href="#">#visitSEDONA</a>
    			</div>
    			<div class="social">
-   				<ul>
+   				<ul class="social-navigation">
           			<li><a class="social-button" href="#">Twitter</a></li>
           			<li><a class="social-button" href="#">Facebook</a></li>
           			<li><a class="social-button" href="#">Youtube</a></li>
