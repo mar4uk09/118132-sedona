@@ -64,13 +64,21 @@
 								</label>
 							</fieldset>
 							<div class="wrapper">
-								<fieldset class="price">
-									<legend>Стоимость в сутки (Р):</legend>
-									<span>от 0</span>
-									<span>ДО 3000</span>
-									<input type="range" name="price">
-								</fieldset>
-								<button type="submit" class="filters-button">ПОКАЗАТЬ</button>
+								<div class="filter-range">
+							    	<div class="filter-range-title">Стоимость в сутки (р):</div>
+						    		<div class="price-controls">
+							        	<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							        	<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+							    	</div>
+							        <div class="range-controls">
+							        	<div class="scale">
+							        		<div class="bar"></div>
+							        	</div>
+							        	<div class="range-toggle range-toggle-min"></div>
+							        	<div class="range-toggle range-toggle-max"></div>
+							        </div>
+							        <button class="btn-transparent" type="submit">Показать</button>
+							    </div>
 							</div>
 						</form>
 					</section>
@@ -85,8 +93,8 @@
 							<a href="#">ПО РЕЙТИНГУ</a>
 						</div>
 						<div class="sorting-right-block">
-							<a href="#">up</a>
-							<a href="#" class="current-page">down</a>
+							<a href="#"><span class="visually-hidden">up</span></a>
+							<a href="#" class="current-page"><span class="visually-hidden">down</span></a>
 						</div>
 					</div>
 					<section class="hotels">
@@ -150,13 +158,13 @@
 
 	   		<footer class="main-footer">
 	   			<div class="visit-sedona">
-	   				<a class="visit-sedona-link" href="#">#visitSEDONA</a>
+	   				<a href="#">#visitSEDONA</a>
 	   			</div>
 	   			<div class="social">
 	   				<ul class="social-navigation">
-	          			<li><a class="social-button" href="#">Twitter</a></li>
-	          			<li><a class="social-button" href="#">Facebook</a></li>
-	          			<li><a class="social-button" href="#">Youtube</a></li>
+	          			<li><a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+	          			<li><a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+	          			<li><a class="social-button youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
 	        		</ul>
 	   			</div>
 	   			<div class="copyright">
