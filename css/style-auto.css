@@ -40,8 +40,8 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
-	-webkit-box-shadow: 0 0 40px 2px #dbdbdb;
-	        box-shadow: 0 0 40px 2px #dbdbdb;
+	-webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+	        box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
@@ -925,7 +925,7 @@ a:active path {
 }
 
 .hotels {
-	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: 1px solid #e5e5e5;
 	padding: 30px 73px;
 	padding-bottom: 25px;
 	display: -webkit-box;
@@ -949,7 +949,7 @@ a:active path {
 }
 
 .hotels:last-of-type {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-foto {
