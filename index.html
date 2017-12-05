@@ -5,7 +5,7 @@
 		<title>HTML Academy: Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-min.css" rel="stylesheet">
 	</head>
 	<body class="index-page">
 		<div class="container">
@@ -13,7 +13,7 @@
 				<nav class="main-nav">
 					<ul class="main-navigation">						
 						<li>
-							<a href="index.html">ИНФОРМАЦИЯ</a>
+							<a href="info.html">ИНФОРМАЦИЯ</a>
 						</li>
 						<li>
 							<a href="foto.html">ФОТО И ВИДЕО</a>
@@ -116,15 +116,15 @@
 							</div>
 							<div class="visitors-wrapper">
 								<div class="visitors">
-									<label for="adult">ВзрослыЕ:</label>
+									<label class="adults" for="adult">ВзрослыЕ:</label>
 									<button type="button" class="less" aria-label="меньше">-</button>
-									<input type="number" name="adult" id="adult" min="1" value="2">
+									<input type="text" name="adult" id="adult" value="2">
 									<button type="button" class="more" aria-label="больше">+</button>
 								</div>
 								<div class="visitors">
-									<label for="children">ДетИ:</label>
+									<label class="children" for="children">ДетИ:</label>
 									<button type="button" class="less" aria-label="меньше">-</button>
-									<input type="number" name="children" id="children" min="0" value="0">
+									<input type="text" name="children" id="children" value="0">
 									<button type="button" class="more" aria-label="больше">+</button>
 								</div>
 							</div>
@@ -153,5 +153,6 @@
 	   			</div>
 	   		</footer>
 	   	</div>
+	   	<script src="js/scripts.js"></script>
 	</body>
 </html>
